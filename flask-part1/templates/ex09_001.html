@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>layout - 부모템플릿</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style type="text/css">
+			.container{
+				max-width: 400px;
+				padding-top: 10px;
+				border:solid 1px red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class = "wrap">
+			<h3>부모 템플릿영역 시작</h3>
+			<br/>
+			{% block content %}{% endblock %}
+			<br/>
+			<h3>부모 템플릿영역 종료</h3>
+		</div>
+	</body>
+</html>
